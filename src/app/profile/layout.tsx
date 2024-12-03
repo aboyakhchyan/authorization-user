@@ -2,7 +2,7 @@
 
 import axios from "axios";
 import Link from "next/link";
-import { redirect } from "next/navigation";
+
 
 interface IProps {
     children: React.ReactNode;

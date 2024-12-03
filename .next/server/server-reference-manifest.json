@@ -71,26 +71,6 @@
         "app/login/page": "action-browser",
         "app/profile/page": "rsc"
       }
-    },
-    "cd6f0d1166954a7fde338a3f503429f001f9fb6f": {
-      "workers": {
-        "app/profile/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Favetis%2FDesktop%2Fpicsart-lessons%2FAuth%2Fsrc%2Fapp%2F_lib%2Factions.ts%22%2C%5B%22%24%24RSC_SERVER_ACTION_2%22%2C%22handleSignup%22%2C%22verifyUser%22%2C%22handleLogin%22%2C%22%24%24RSC_SERVER_ACTION_1%22%2C%22%24%24RSC_SERVER_ACTION_0%22%5D%5D%5D&encryptionKey=cwI8ryjLMFLX0va6QLojB5ZZ7xLqeqqSA4glDbhEPjQ%3D&__client_imported__=!",
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Favetis%2FDesktop%2Fpicsart-lessons%2FAuth%2Fsrc%2Fapp%2F_lib%2Factions.ts%22%2C%5B%22%24%24RSC_SERVER_ACTION_2%22%2C%22handleSignup%22%2C%22verifyUser%22%2C%22handleLogin%22%2C%22%24%24RSC_SERVER_ACTION_1%22%2C%22%24%24RSC_SERVER_ACTION_0%22%5D%5D%5D&encryptionKey=cwI8ryjLMFLX0va6QLojB5ZZ7xLqeqqSA4glDbhEPjQ%3D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/profile/page": "rsc",
-        "app/login/page": "action-browser"
-      }
-    },
-    "be021d2f553379ae3b900a9eb980e0a6a4e6c133": {
-      "workers": {
-        "app/profile/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Favetis%2FDesktop%2Fpicsart-lessons%2FAuth%2Fsrc%2Fapp%2F_lib%2Factions.ts%22%2C%5B%22%24%24RSC_SERVER_ACTION_2%22%2C%22handleSignup%22%2C%22verifyUser%22%2C%22handleLogin%22%2C%22%24%24RSC_SERVER_ACTION_1%22%2C%22%24%24RSC_SERVER_ACTION_0%22%5D%5D%5D&encryptionKey=cwI8ryjLMFLX0va6QLojB5ZZ7xLqeqqSA4glDbhEPjQ%3D&__client_imported__=!",
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Favetis%2FDesktop%2Fpicsart-lessons%2FAuth%2Fsrc%2Fapp%2F_lib%2Factions.ts%22%2C%5B%22%24%24RSC_SERVER_ACTION_2%22%2C%22handleSignup%22%2C%22verifyUser%22%2C%22handleLogin%22%2C%22%24%24RSC_SERVER_ACTION_1%22%2C%22%24%24RSC_SERVER_ACTION_0%22%5D%5D%5D&encryptionKey=cwI8ryjLMFLX0va6QLojB5ZZ7xLqeqqSA4glDbhEPjQ%3D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/profile/page": "rsc",
-        "app/login/page": "action-browser"
-      }
     }
   },
   "edge": {},

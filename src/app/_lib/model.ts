@@ -15,8 +15,8 @@ export const getAllUsers = () => {
 }
 
 export const insertUser = (user:InputUser):db.RunResult => {
-    return sql.prepare(`INSERT INTO users(name, surname, login, password)
-                        VALUES(@name, @surname, @login, @password)                    
+    return sql.prepare(`INSERT INTO users(name, surname, login, password, attempts)
+                        VALUES(@name, @surname, @login, @password, @attempts)                    
     `).run(user)
 }
 
@@ -52,3 +52,16 @@ export const getUserById = (userId: number): (IUser | null) => {
 export const deleteUserInSession = (token: string) => {
     return sql.prepare(`DELETE FROM session WHERE id = ?`).run(token)
 } 
+
+export const incrementAttempts = (id: number, attempts: number) => {
+    return sql.prepare(`UPDATE users SET attempts = ? WHERE id = ?`).run(attempts + 1, id)
+}
+
+
+export const addBlockingTimer = (id: number, time: number) => {
+    return sql.prepare(`UPDATE users SET time = ? WHERE id = ?`).run(time, id)
+}
+
+export const updateData = (id: number) => {
+    return sql.prepare(`UPDATE users SET attempts = ?, time = ? WHERE id = ?`).run(0, null, id)
+}

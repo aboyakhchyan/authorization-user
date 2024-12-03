@@ -1,15 +1,19 @@
 const db = require("better-sqlite3")
 const sql = new db('auth.db')
 sql.exec(`drop table if exists users`)
+
 sql.exec(`
     CREATE TABLE IF NOT EXISTS users(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
         surname TEXT,
         login TEXT,
-        password TEXT
+        password TEXT,
+        attempts INTEGER,
+        time INTEGER
     )    
 `)
+
 
 sql.exec(`drop table if exists session`)
 

@@ -1,11 +1,20 @@
 export interface IUser{
     id:number
     name:string
-    surname:string;
+    surname:string
     login:string
     password:string
+    attempts: number
+    time: number
 }
-export type InputUser = Omit<IUser, 'id'>
+
+export interface InputUser {
+    name:string
+    surname:string
+    login:string
+    password:string
+    attempts: number
+}
 
 export interface IToken {
     id: string
